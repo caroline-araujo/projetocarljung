@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+:root {
+
+}
+
+h2.topo {
+    background-color: #07294D;
+    color: #A1A8AF;
+    text-align: right;
+    padding: 20px;
+    padding-right: 200px;
+    margin-top: 0px;
+}
+
+nav#princ {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav > li {
+    display: inline-block;
+    color:#07294D;
+    padding-right: 50px;
+}
+
+img {
+    width: 100%;
+    height: 700px;
+    opacity: 0.9;
+}
+
+#principal > img {
+    position: relative;
+}
+
+#principal > h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+#principal > p {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+div#principal > nav.menusec {
+    background-color: #07294D;
+    color: white;
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+nav.menusec > li {
+    color: white;
+}
+
+div#vida {
+    margin-top: 185px;
+    text-align: justify;
+}
+
+div#estudos {
+    margin-top: 30px;
+    text-align: justify;
+    background-color: #07294D;
+    color: white;
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    top: 85%;
+    left: 35%;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+div#legado {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+div#obras {
+    margin-top: 30px;
+    text-align: justify;
+    background-color: #07294D;
+    color: white;
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    top: 85%;
+    left: 35%;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #07294D;
+    color: white;
+    margin-top: 30px;
+    padding: 5px;
+    text-align: center;
+}
