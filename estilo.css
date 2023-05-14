@@ -114,8 +114,8 @@ div#obras > ul > li {
 }
 
 div#obras > ul > li > img {
-    width: 400px;
-    height: 400px;
+    max-width: 30%;
+    height: auto;
 }
 
 footer {
