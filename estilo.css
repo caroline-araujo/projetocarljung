@@ -98,8 +98,24 @@ div#obras {
     padding-right: 150px;
     top: 85%;
     left: 35%;
-    display: inline-block;
     border-radius: 20px;
+}
+
+div#obras > ul > li {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: white;
+    color: #07294D;
+    text-align: center;
+}
+
+div#obras > ul > li > img {
+    width: 400px;
+    height: 400px;
 }
 
 footer {
