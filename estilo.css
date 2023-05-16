@@ -160,6 +160,11 @@ div#obras > ul > li > img {
     height: auto;
 }
 
+#paginaobras > ul > li > img {
+    max-width: 30%;
+    height: auto;
+}
+
 footer {
     background-color: #07294D;
     color: white;
