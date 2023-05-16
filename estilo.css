@@ -4,19 +4,34 @@
 
 }
 
-h2.topo {
+header {
     background-color: #07294D;
+    padding: 70px;
+}
+
+header > h1, h2 {
+    color: white;
+}
+
+h2.topo {
     color: #A1A8AF;
     text-align: right;
-    padding: 20px;
     padding-right: 200px;
     margin-top: 0px;
+    position: absolute;
+    top: 5%;
+    right: -10%;
 }
 
 nav#princ {
     background-color: white;
-    padding: 30px;
-    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 1360px;
+    margin-left: -80px;
+    text-align: left;
+    position: absolute;
+    top: 23.5vh;
 }
 
 nav > li {
@@ -37,13 +52,13 @@ img {
 
 #principal > h1 {
     position: absolute;
-    top: 40%;
+    top: 80%;
     left: 30%;
 }
 
 #principal > p {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 30%;
 }
 
@@ -54,14 +69,19 @@ div#principal > nav.menusec {
     padding-left: 150px;
     padding-right: 150px;
     position: absolute;
-    top: 85%;
-    left: 35%;
+    top: 100vh;
+    left: 30%;
     display: inline-block;
     border-radius: 20px;
 }
 
+nav.menusec > h2 {
+    text-align: center;
+}
+
 nav.menusec > li {
     color: white;
+    text-align: center;
 }
 
 div#vida {
@@ -102,10 +122,10 @@ div#obras {
 }
 
 div#obras > ul > li {
-    padding-left: 50px;
+    padding-left: 30px;
     padding-top: 50px;
-    padding-right: 50px;
-    margin: 10px;
+    padding-right: 30px;
+    margin: 8px;
     border-radius: 10px;
     display: inline-block;
     background-color: white;
@@ -115,6 +135,28 @@ div#obras > ul > li {
 
 div#obras > ul > li > img {
     max-width: 30%;
+    height: auto;
+}
+
+#obras p {
+    text-align: right;
+}
+
+#paginaobras > ul > li {
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 30px;
+    margin: 6px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: white;
+    color: #07294D;
+    text-align: center;
+    border: 1px solid #07294D;
+}
+
+#paginaobras > ul > li > a > img {
+    max-width: 35%;
     height: auto;
 }
 
