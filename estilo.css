@@ -165,6 +165,20 @@ div#obras > ul > li > img {
     height: auto;
 }
 
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 10px black;
+    background-color: #07294D;
+    color: white;
+}
+
 footer {
     background-color: #07294D;
     color: white;
