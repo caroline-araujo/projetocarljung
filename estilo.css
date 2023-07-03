@@ -1,43 +1,116 @@
 @charset "UTF-8";
 
 :root {
+    --cor0: white;
+    --cor1: #bbbec2;
+    --cor2: #727475;
+    --cor3: #454546;
+    --cor4: #4a4b4d;
+    --cor5: black;
 
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+/*    --cor5: #07294D;
+        background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor3);
 }
 
 header {
-    background-color: #07294D;
-    padding: 70px;
+        background-color: var(--cor5);
+        min-height: 150px;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
 }
 
-header > h1, h2 {
-    color: white;
+header > h1 {
+    color: var(--cor0);
+    font-family: var(--fonte-destaque); 
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.664);
+    text-align: center;
+}
+
+header > h2 {
+    color: var(--cor0);
 }
 
 h2.topo {
-    color: #A1A8AF;
+    color: var(--cor0);
     text-align: right;
-    padding-right: 200px;
+    padding-right: 220px;
     margin-top: 0px;
     position: absolute;
     top: 5%;
     right: -10%;
 }
 
+h2.topo > a > img {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    color:  var(--cor0);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.527);
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: var(--cor5);
+    box-shadow: 0x 7px 7px rgba(0, 0, 0, 0.199);
+}
+
+nav#princ > li > a {
+    color: var(--cor0);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav#princ > li > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border-radius: 15px;
+}
+
 nav#princ {
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 1360px;
-    margin-left: -80px;
+    background-color: var(--cor5);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 1300px;
+    margin-left: 0px;
     text-align: left;
     position: absolute;
-    top: 23.5vh;
+    top: 27.5vh;
 }
 
 nav > li {
     display: inline-block;
-    color:#07294D;
-    padding-right: 50px;
+    color: var(--cor0);
+    padding-right: 30px;
 }
 
 img {
@@ -62,38 +135,56 @@ img {
     left: 30%;
 }
 
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--cor0);
+    padding: 30px;
+    box-shadow: 0x 0px 10px rgba(0, 0, 0, 0.616);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 div#principal > nav.menusec {
-    background-color: #07294D;
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor0);
     padding: 50px;
     padding-left: 150px;
     padding-right: 150px;
     position: absolute;
     top: 100vh;
-    left: 30%;
+    left: 35%;
     display: inline-block;
     border-radius: 20px;
 }
 
 nav.menusec > h2 {
+    margin-bottom: 20px;
     text-align: center;
 }
 
 nav.menusec > li {
-    color: white;
+    color: var(--cor0);
     text-align: center;
 }
 
 div#vida {
-    margin-top: 185px;
+    margin-top: 140px;
     text-align: justify;
+    padding: 10px;
+}
+
+div#vida > h2, h3, p {
+    margin-top: 20px;
 }
 
 div#estudos {
     margin-top: 30px;
     text-align: justify;
-    background-color: #07294D;
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor0);
     padding: 50px;
     padding-left: 150px;
     padding-right: 150px;
@@ -110,9 +201,11 @@ div#legado {
 
 div#obras {
     margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     text-align: justify;
-    background-color: #07294D;
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor0);
     padding: 50px;
     padding-left: 150px;
     padding-right: 150px;
@@ -128,8 +221,8 @@ div#obras > ul > li {
     margin: 8px;
     border-radius: 10px;
     display: inline-block;
-    background-color: white;
-    color: #07294D;
+    background-color: var(--cor0);
+    color: var(--cor5);
     text-align: center;
 }
 
@@ -139,7 +232,8 @@ div#obras > ul > li > img {
 }
 
 #obras p {
-    text-align: right;
+    padding: 15px 15px;
+    text-align: center;
 }
 
 #paginaobras > ul > li {
@@ -149,10 +243,10 @@ div#obras > ul > li > img {
     margin: 6px;
     border-radius: 10px;
     display: inline-block;
-    background-color: white;
-    color: #07294D;
+    background-color: var(--cor0);
+    color: var(--cor5);
     text-align: center;
-    border: 1px solid #07294D;
+    border: 1px solid --cor5;
 }
 
 #paginaobras > ul > li > a > img {
@@ -175,13 +269,13 @@ div#obras > ul > li > img {
     padding: 10px 10px;
     border-radius: 10px;
     box-shadow: 10px black;
-    background-color: #07294D;
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor5);
 }
 
 footer {
-    background-color: #07294D;
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor0);
     margin-top: 30px;
     padding: 5px;
     text-align: center;
