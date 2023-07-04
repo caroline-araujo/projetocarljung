@@ -180,18 +180,26 @@ div#vida > h2, h3, p {
     margin-top: 20px;
 }
 
-div#estudos {
+#estudos {
     margin-top: 30px;
     text-align: justify;
     background-color: var(--cor5);
     color: var(--cor0);
     padding: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
     top: 85%;
     left: 35%;
     display: inline-block;
     border-radius: 20px;
+}
+
+#estudos > p {
+    padding-bottom: 10px;
+}
+
+#estudos > img {
+    padding-top: 20px;
 }
 
 div#legado {
@@ -270,7 +278,7 @@ div#obras > ul > li > img {
     border-radius: 10px;
     box-shadow: 10px black;
     background-color: var(--cor5);
-    color: var(--cor5);
+    color: var(--cor0);
 }
 
 footer {
