@@ -1,3 +1,11 @@
+window.addEventListener('DOMContentLoaded', function() {
+  var url = window.location.href;
+  var filename = url.substring(url.lastIndexOf('/') + 1);
+
+  if (filename === 'index.html') {
+    alert("Oi, Maria! Esse site foi feito com muito carinho por alguém que te ama demais. Espero que goste! xD");
+  }
+});
 let popUpWindow;
 
 function abrirLista() {
@@ -83,3 +91,5 @@ function limparSelecoes() {
     livro.checked = false;
     });
 }
+
+

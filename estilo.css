@@ -416,3 +416,22 @@ div#obras {
 }
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    top: -25px;
+    left: 0;
+    white-space: nowrap;
+    z-index: 1;
+}
